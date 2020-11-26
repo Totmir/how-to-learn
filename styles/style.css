@@ -1,31 +1,286 @@
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
+
+/* мы ещё не умеем делать мобильную версию сайта, */
   /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
+
+/* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+
+/* выше для экранов больше 1600px отцентрировали весь контент */
+
+  font-family: "Helvetica Neue", "Arial", sans-serif;
 }
 
 .header {
+  position: relative;
+
+  display: flex;
+  align-content: center;
+  flex-flow: row wrap;
+
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
+.header__logo_place_header {
+  position: absolute;
+  z-index: 3;
+  top: 30px;
+  left: 64px;
+
+  width: 183px;
+  height: 32px;
 }
 
-/* и элемента с модификатором вида ключ-значение */
+.header__title {
+  z-index: 3;
+
+  width: 730px;
+  margin-left: 62px;
+
+  font-size: 102px;
+  font-weight: bolder;
+  line-height: 96px;
+}
+
+.header__subtitle {
+  position: absolute;
+  z-index: 3;
+  bottom: 30px;
+  left: 64px;
+
+  width: 338px;
+
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+}
+
+.header__link {
+  color: #2f80ed;
+}
+
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__square-pic {
+  position: absolute;
+  top: 64px;
+  right: 0;
+
+  width: 568px;
+  height: 568px;
+
+  background: #2f80ed;
+}
+
+.header__main-illustration {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  width: 765px;
+  height: 608px;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.two-columns {
+  display: flex;
+
+  width: 80%;
+}
+
+.two-columns__brief {
+  width: 175px;
+  margin: 0;
+
+  color: #2f80ed;
+
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.main-text {
+  width: 80%;
+  min-width: 784px;
+
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+}
+
+.two-columns__paragraph {
+  margin: 0;
+}
+
+.two-columns__paragraph:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.two-colums__span-accent {
+  font-size: 24px;
+  font-weight: bolder;
+  line-height: 34px;
+}
+
+.digits {
+  display: flex;
+  align-items: center;
+  flex-flow: nowrap column;
+
+  margin: 100px auto 0 auto;
+}
+
+.feynman {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+
+  height: 790px;
+  padding: 100px 0 0 0;
+
+  background-image: url("/images/feynman.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.feynman__title {
+  width: 648px;
+  margin: 0;
+  margin-bottom: 70px;
+
+  text-align: center;
+
+  font-size: 120px;
+  font-weight: bolder;
+  line-height: 1.15;
+}
+
+.feynman__subtitle,
+.feynman__link {
+  margin: 0;
+
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+}
+
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+}
+
+.kaufman {
+  position: relative;
+  z-index: -1;
+
+  display: flex;
+  align-items: center;
+  flex-flow: nowrap column;
+
+  margin-bottom: 60px;
+
+  background: #1f1f1f;
+}
+
+.kaufman__triangle {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+}
+
+/* Компоненты */
+
+.link {
+  text-decoration: none;
+
+  color: #2f80ed;
+}
+
+.section-title {
+  z-index: 1;
+
+  width: 60%;
+  margin-bottom: 20px;
+
+  text-align: center;
+
+  font-size: 60px;
+  font-weight: bolder;
+  line-height: 1.15;
+}
+
+.section-subtitle {
+  z-index: 1;
+
+  width: 60%;
+
+  text-align: center;
+
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+}
+
+.table {
+  z-index: 1;
+
+  display: flex;
+  flex-flow: row wrap;
+
+  width: 1100px;
+}
+
+.table__row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.table__cell {
+  width: 250px;
+
+  vertical-align: baseline;
+}
+
+.table__heading {
+  font-size: 24px;
+  font-weight: bolder;
+  line-height: 1.15;
+}
+
+.table__text {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+/* Темная тема */
+
+.section-title_theme_dark,
+.section-subtitle_theme_dark,
+.table__cell_theme_dark {
+  color: white;
+}
+
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
-  margin-right: 0;
   margin-top: 80px;
+  margin-right: 0;
 }
