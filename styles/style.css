@@ -40,7 +40,9 @@
   z-index: 3;
 
   width: 730px;
+  margin: 0;
   margin-left: 62px;
+  padding: 0;
 
   font-size: 102px;
   font-weight: bolder;
@@ -54,6 +56,8 @@
   left: 64px;
 
   width: 338px;
+  margin: 0;
+  padding: 0;
 
   font-size: 18px;
   font-weight: normal;
@@ -188,19 +192,118 @@
   z-index: -1;
 
   display: flex;
+  overflow: hidden;
   align-items: center;
   flex-flow: nowrap column;
 
-  margin-bottom: 60px;
+  padding-top: 90px;
+  padding-bottom: 60px;
 
   background: #1f1f1f;
 }
 
 .kaufman__triangle {
   position: absolute;
-  z-index: 0;
-  top: 0;
-  right: 0;
+  z-index: -1;
+  bottom: -250px;
+  left: -221px;
+
+  width: 877px;
+  height: 877px;
+}
+
+/* Секция Кауфмана */
+
+.section-title_theme_dark {
+  margin: 0;
+
+  font-size: 60px;
+  font-weight: bolder;
+  line-height: 1.15px;
+}
+
+.section-subtitle_theme_dark {
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+}
+
+/* Футер */
+
+.footer {
+  display: flex;
+  justify-content: center;
+
+  min-height: 350px;
+  margin: 0 auto;
+  padding: 60px 0 40px 0;
+
+  color: white;
+  background: #1f1f1f;
+}
+
+.footer__columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  width: 90%;
+}
+
+.footer__columns__copyright,
+.footer__column_content_info,
+.footer__column_content_social {
+  display: inline-block;
+
+  width: fit-content;
+}
+
+.footer__columns__copyright {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.footer__column_content_info,
+.footer__column_content_social {
+  display: flex;
+  flex-flow: column;
+
+  padding-bottom: 16px;
+}
+
+.footer__column-heading {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 18px;
+  font-weight: bolder;
+  line-height: 30px;
+}
+
+.footer_author {
+  margin: 18px 0;
+
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+}
+
+.footer__column-links {
+  text-decoration: none;
+
+  color: inherit;
+
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+.footer__column-link__text {
+  margin-left: 10px;
 }
 
 /* Компоненты */
@@ -259,13 +362,22 @@
   vertical-align: baseline;
 }
 
+.table__cell_image-container {
+  position: relative;
+}
+
 .table__heading {
+  margin: 0;
+  margin-bottom: 20px;
+
   font-size: 24px;
   font-weight: bolder;
   line-height: 1.15;
 }
 
 .table__text {
+  margin: 0;
+
   font-size: 18px;
   font-weight: normal;
   line-height: 1.2;
@@ -279,8 +391,15 @@
   color: white;
 }
 
+.table__row_theme_dark {
+  margin-top: 80px;
+}
+
 .table__cell_theme_dark {
   width: 200px;
-  margin-top: 80px;
   margin-right: 0;
+}
+
+.table_theme_dark {
+  margin-bottom: 90px;
 }

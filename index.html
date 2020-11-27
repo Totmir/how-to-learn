@@ -9,7 +9,7 @@
 </head>
 <body class="page">
   <header class="header">
-    <img class="header__logo header__logo_place_header" src="/images/logo_place_header.svg"></img>
+    <img class="header__logo header__logo_place_header" src="/images/logo_place_header.svg" alt="Yandex Practicum">
     <h1 class="header__title">Научиться учиться</h1>
     <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a class="header__link link" href="#">Узнать⟶</a></p>
     <div class="header__square-pic"></div>
@@ -68,7 +68,6 @@
         </div>
       </div>
     </div>
-    </div>
   </section>
   <section class="feynman">
     <h2 class="feynman__title">Метод Фейнмана</h2>
@@ -79,7 +78,7 @@
     <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
     <h3 class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</h3>
     <div class="table table_theme_dark">
-      <div class="table__row">
+      <div class="table__row table__row_theme_dark">
         <div class="table__cell table__cell_theme_dark">
           <h4 class="table__heading">1</h4>
           <p class="table__text">Выберите привлекатлеьный проект.</p>
@@ -101,7 +100,7 @@
           <p class="table__text">Приготовьте всё необходимое для занятий.</p>
         </div>
       </div>
-      <div class="table__row">
+      <div class="table__row table__row_theme_dark">
         <div class="table__cell table__cell_theme_dark">
           <h4 class="table__heading">6</h4>
           <p class="table__text">Устраните препятствия для занятий.</p>
@@ -118,15 +117,33 @@
           <h4 class="table__heading">9</h4>
           <p class="table__text">Занимайтесь по расписанию, короткими интенсивными интервалами</p>
         </div>
-        <div class="table__cell table__cell_theme_dark">
+        <div class="table__cell table__cell_theme_dark table__cell_image-container">
           <h4 class="table__heading">10</h4>
           <p class="table__text">Уделяйте внимание количеству и скорости.</p>
+          <img class="kaufman__triangle" src="/images/kaufman-triangle.svg" alt="triangle">
         </div>
       </div>
     </div>
-    <img class="kaufman__triangle" src="/images/kaufman-triangle.svg" alt="triangle">
   </section>
   <footer class="footer">
+    <div class="footer__columns">
+      <div class="footer__columns__copyright">
+        <img class="logo_place_footer" alt="Yandex Practicum" src="/images/logo_place_footer.svg" width="183" height="35">
+        <p class="footer_author">&copy; 2019. Виктор Абанькин</p>
+      </div>
+      <div class="footer__column_content_info">
+        <h4 class="footer__column-heading">О Практикуме</h4>
+        <a href="#" class="footer__column-links">Главная</a>
+        <a href="#" class="footer__column-links">Концепции</a>
+        <a href="#" class="footer__column-links">Наставники</a>
+      </div>
+      <div class="footer__column_content_social">
+        <h4 class="footer__column-heading">Соцсети</h4>
+        <a href="https://www.facebook.com/" class="footer__column-links"><img class="footer__social-icon_fb" src="/images/facebook_color_white.svg" alt="facebook" height="15" width="15"><span class="footer__column-link__text">Facebook</span></a>
+        <a href="https://vk.com/feed" class="footer__column-links"><img class="footer__social-icon_vk" src="/images/vk_color_white.svg" alt="vkontakte" height="15" width="15"><span class="footer__column-link__text">Вконтакте</span></a>
+        <a href="https://www.instagram.com/" class="footer__column-links"><img class="footer__social-icon_inst" src="/images/instagram_color_white.svg" alt="instagram" height="15" width="15"><span class="footer__column-link__text">Instagram</span></a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
