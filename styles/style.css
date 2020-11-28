@@ -23,12 +23,10 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
 }
 
 .header__logo_place_header {
   position: absolute;
-  z-index: 3;
   top: 30px;
   left: 64px;
 
@@ -37,8 +35,6 @@
 }
 
 .header__title {
-  z-index: 3;
-
   width: 730px;
   margin: 0;
   margin-left: 62px;
@@ -51,7 +47,6 @@
 
 .header__subtitle {
   position: absolute;
-  z-index: 3;
   bottom: 30px;
   left: 64px;
 
@@ -190,7 +185,7 @@
 
 .kaufman {
   position: relative;
-  z-index: -1;
+  z-index: 1;
 
   display: flex;
   overflow: hidden;
@@ -229,6 +224,82 @@
   font-size: 24px;
   font-weight: normal;
   line-height: 34px;
+}
+
+/* Компоненты */
+
+.link {
+  text-decoration: none;
+
+  color: #2f80ed;
+}
+
+.link:hover {
+  opacity: .5;
+}
+
+.section-title {
+  width: 60%;
+  margin-bottom: 20px;
+
+  text-align: center;
+
+  font-size: 60px;
+  font-weight: bolder;
+  line-height: 1.15;
+}
+
+.section-subtitle {
+  width: 60%;
+
+  text-align: center;
+
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+}
+
+.table {
+  display: flex;
+  flex-flow: row wrap;
+
+  width: 1100px;
+}
+
+.table__row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  width: 100%;
+  margin-top: 60px;
+}
+
+.table__cell {
+  width: 250px;
+
+  vertical-align: baseline;
+}
+
+.table__cell_image-container {
+  position: relative;
+}
+
+.table__heading {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 24px;
+  font-weight: bolder;
+  line-height: 1.15;
+}
+
+.table__text {
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
 }
 
 /* Футер */
@@ -296,6 +367,7 @@
   text-decoration: none;
 
   color: inherit;
+  color: white;
 
   font-family: inherit;
   font-size: 18px;
@@ -305,84 +377,6 @@
 
 .footer__column-link__text {
   margin-left: 10px;
-}
-
-/* Компоненты */
-
-.link {
-  text-decoration: none;
-
-  color: #2f80ed;
-}
-
-.section-title {
-  z-index: 1;
-
-  width: 60%;
-  margin-bottom: 20px;
-
-  text-align: center;
-
-  font-size: 60px;
-  font-weight: bolder;
-  line-height: 1.15;
-}
-
-.section-subtitle {
-  z-index: 1;
-
-  width: 60%;
-
-  text-align: center;
-
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 34px;
-}
-
-.table {
-  z-index: 1;
-
-  display: flex;
-  flex-flow: row wrap;
-
-  width: 1100px;
-}
-
-.table__row {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-
-  width: 100%;
-  margin-top: 60px;
-}
-
-.table__cell {
-  width: 250px;
-
-  vertical-align: baseline;
-}
-
-.table__cell_image-container {
-  position: relative;
-}
-
-.table__heading {
-  margin: 0;
-  margin-bottom: 20px;
-
-  font-size: 24px;
-  font-weight: bolder;
-  line-height: 1.15;
-}
-
-.table__text {
-  margin: 0;
-
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 1.2;
 }
 
 /* Темная тема */
