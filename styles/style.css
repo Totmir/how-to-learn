@@ -116,7 +116,7 @@
   line-height: 1.2;
 }
 
-.main-text {
+.two-columns_main-text {
   width: 80%;
   min-width: 784px;
 
@@ -133,7 +133,7 @@
   margin-bottom: 30px;
 }
 
-.two-colums__span-accent {
+.two-columns__span-accent {
   font-size: 24px;
   font-weight: bolder;
   line-height: 34px;
