@@ -25,7 +25,7 @@
   max-height: 756px;
 }
 
-.header__logo_place_header {
+.logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
@@ -60,7 +60,13 @@
 }
 
 .header__link {
+  text-decoration: none;
+
   color: #2f80ed;
+}
+
+.header__link:hover {
+  opacity: .5;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -181,6 +187,14 @@
   position: absolute;
   top: 50%;
   right: 40px;
+
+  text-decoration: none;
+
+  color: #2f80ed;
+}
+
+.feynman__link:hover {
+  opacity: .5;
 }
 
 .kaufman {
@@ -227,17 +241,6 @@
 }
 
 /* Компоненты */
-
-.link {
-  text-decoration: none;
-
-  color: #2f80ed;
-}
-
-.link:hover {
-  opacity: .5;
-}
-
 .section-title {
   width: 60%;
   margin-bottom: 20px;
@@ -373,6 +376,10 @@
   font-size: 18px;
   font-weight: normal;
   line-height: 30px;
+}
+
+.footer__column-links:hover {
+  opacity: .5;
 }
 
 .footer__column-link__text {
