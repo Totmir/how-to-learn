@@ -54,8 +54,6 @@
 
   width: 388px;
   margin: 0;
-  margin: 0;
-  padding: 0;
   padding: 0;
 
   font-size: 18px;
@@ -182,7 +180,6 @@
 .feynman__subtitle,
 .feynman__link {
   margin: 0;
-  margin: 0;
   padding: 0;
 
   font-size: 36px;
@@ -244,10 +241,6 @@
   font-size: 60px;
   font-weight: bold;
   line-height: 1.15;
-}
-
-.section-title_theme_dark {
-  color: white;
 }
 
 .section-subtitle {
@@ -353,11 +346,6 @@
   justify-content: space-between;
 }
 
-.footer__column_content_info,
-.footer__column_content_social {
-  width: fit-content;
-}
-
 .footer__columns__copyright {
   display: flex;
   flex-flow: column;
@@ -369,6 +357,7 @@
   display: flex;
   flex-flow: column;
 
+  width: fit-content;
   padding-bottom: 16px;
 }
 
@@ -424,7 +413,7 @@
 /* Секция Кауфмана */
 
 .section-title_theme_dark {
-  font-weight: bold;
+  color: white;
 }
 
 .table__theme_dark {
