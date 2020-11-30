@@ -37,6 +37,8 @@
 }
 
 .header__title {
+    z-index: 1;
+
     width: 730px;
     margin: 0;
     margin-left: 62px;
@@ -49,6 +51,7 @@
 
 .header__subtitle {
     position: absolute;
+    z-index: 1;
     bottom: 30px;
     left: 64px;
 
@@ -210,8 +213,7 @@
     align-items: center;
     flex-flow: nowrap column;
 
-    padding-top: 90px;
-    padding-bottom: 60px;
+    padding: 90px 0;
 
     background: #1f1f1f;
 }
