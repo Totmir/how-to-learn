@@ -1,0 +1,13 @@
+.header {
+    position: relative;
+
+    display: flex;
+    align-content: center;
+    flex-flow: row wrap;
+
+    height: 100vh;
+    min-height: 600px;
+    max-height: 756px;
+
+    background: #f2f2f2;
+}
