@@ -2,6 +2,7 @@
     position: relative;
 
     display: flex;
+    overflow: hidden;
     align-content: center;
     flex-flow: row wrap;
 

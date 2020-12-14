@@ -6,5 +6,7 @@
     width: 568px;
     height: 568px;
 
+    animation: rotation 20s infinite;
+
     background: #2f80ed;
 }
