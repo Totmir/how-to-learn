@@ -36,6 +36,10 @@
 /* digits */
 @import url(../blocks/digits/digits.css);
 
+/* resources */
+@import url(../blocks/resources/resources.css);
+@import url(../blocks/resources/__logo-zone/resources__logo-zone.css);
+
 /* footer */
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__columns/footer__columns.css);
@@ -61,9 +65,12 @@
 
 /* section-title */
 @import url(../blocks/section-title/section-title.css);
-@import url(../blocks/section-title/_theme_dark/section-title_theme_dark.css);
+@import url(../blocks/section-title/_theme/section-title_theme_dark.css);
+
 /* section-subtitle */
 @import url(../blocks/section-subtitle/section-subtitle.css);
+@import url(../blocks/section-subtitle/_theme/section-subtitle_theme_dark.css);
+@import url(../blocks/section-subtitle/_resources/section-subtitle_resources.css);
 
 /* table */
 @import url(../blocks/table/table.css);
