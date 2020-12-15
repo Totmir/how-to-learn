@@ -1,8 +1,5 @@
-.video {
+.techniques {
     display: flex;
     align-items: center;
     flex-flow: column;
-    justify-content: center;
-
-    margin-top: 100px;
 }
