@@ -7,7 +7,3 @@
 .header__link:hover {
     opacity: .5;
 }
-
-[class*="__link"]:hover {
-    transition: opacity linear .5s;
-}
