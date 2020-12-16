@@ -2,7 +2,7 @@
 @import url(../vendor/normalize.css);
 
 /* root */
-@import url(../blocks/root/root.css);
+@import url(../blocks/page/page.css);
 
 /* header */
 @import url(../blocks/header/header.css);
@@ -74,6 +74,7 @@
 @import url(../blocks/cards/__description/cards__description.css);
 
 /* logo */
+@import url(../blocks/logo/logo.css);
 @import url(../blocks/logo/_place/logo_place_footer.css);
 @import url(../blocks/logo/_place/logo_place_header.css);
 
