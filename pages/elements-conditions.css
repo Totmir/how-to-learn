@@ -1,4 +1,0 @@
-[class*="__link"]:hover,
-[class*="__buy-link"]:hover {
-    transition: opacity linear .5s;
-}
