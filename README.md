@@ -1,17 +1,17 @@
-# "How to learn"
+# Проект "How to learn"
 
 ---
 
-One can learn how to style efficiently and learn several techniques to improve you study skills.
+Здесь можно узнать как учиться эффективно и выучить некоторые техники, чтобы улучшить ваш самый главный навык - навык учиться!
 
-Made by **Alex Mir**
+Создан **Alex Mir**
 
-Technologies:
+Технологии:
 
 - HTML
 - BEM
 - CSS
 
-Plans to be done:
+Планы:
 
-- Add preprocessor SASS to optimise working speed
+- Добавить препроцессор SASS для ускорения работы
