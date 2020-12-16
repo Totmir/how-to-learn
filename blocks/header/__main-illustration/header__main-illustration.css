@@ -5,4 +5,7 @@
 
     width: 765px;
     height: 608px;
+
+    object-position: center;
+    object-fit: cover;
 }

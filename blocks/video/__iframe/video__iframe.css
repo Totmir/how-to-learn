@@ -1,3 +1,5 @@
 .video__iframe {
+    list-style: none;
+
     transform: translateY(50px);
 }

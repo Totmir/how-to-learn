@@ -22,6 +22,7 @@
 @import url(../blocks/video/video.css);
 @import url(../blocks/video/__iframes/video__iframes.css);
 @import url(../blocks/video/__iframe/video__iframe.css);
+@import url(../blocks/video/__iframe/_player/video__iframe_player.css);
 
 /* oacley */
 @import url(../blocks/oacley/oacley.css);
