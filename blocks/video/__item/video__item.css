@@ -1,0 +1,5 @@
+.video__item {
+    list-style: none;
+
+    transform: translateY(50px);
+}

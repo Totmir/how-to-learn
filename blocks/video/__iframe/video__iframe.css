@@ -1,5 +1,6 @@
 .video__iframe {
-    list-style: none;
+    width: 515px;
+    height: 316px;
 
-    transform: translateY(50px);
+    border: none;
 }
